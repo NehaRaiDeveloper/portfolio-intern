@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Rai - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="site-main-wrapper">
+        <button class="hamburger">
+            <img src="images/hamburger.svg" alt="Menu">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="images/times.svg" alt="Close"></button>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="logo">Neha Rai</div>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <button id="theme-toggle">
+                            <i class="fas fa-moon"></i> <!-- Font Awesome Icon -->
+                        </button>
+
+                    </ul>
+                </div>
+
+            </nav>
+
+        </header>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Neha Rai</h1>
+                    <p>Web Developer | Graphic Designer</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="www.linkedin.com/in/neha-areeja-15bbbb27a" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/NehaRaiDeveloper" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="extra-outer-circle">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/WhatsApp Image 2024-11-18 at 11.06.07 PM.jpeg" alt="Neha Rai"
+                                    class="profile-image">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="section-subtitle">A brief overview of who I am and what I do</div>
+            </div>
+            <div class="about-content">
+                <p>
+                    I am Neha, a Computer Science graduate with a passion for UI/UX design and frontend development.
+                    Currently, I am freelancing and working on my portfolio.
+                </p>
+                <div class="button-container">
+                    <a href="images\WhatsApp Image 2025-01-28 at 10.08.44 AM.jpeg" class="button">Explore My
+                        Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-title">
+                <h2>Experience</h2>
+                <div class="section-subtitle">My professional journey and accomplishments</div>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <img src="images/Qr code.png" alt="University" class="experience-logo">
+                    <div class="experience-text-container">
+                        <h3>University</h3>
+                        <p class="experience-date">December 2024 - Present</p>
+                        <p>Final Year Project – QR-Based Management System with Geolocation API (2024)
+                            Developed a QR-based management system using the MERN stack.
+
+                            Integrated Geolocation API to track and manage locations efficiently.
+
+                            Built a scalable and responsive UI using React.js & Tailwind CSS.
+
+                            Implemented secure authentication with JWT.
+
+                            Worked in a team-based agile environment, improving collaboration skills.</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <img src="images/fake news detection.png" alt="University" class="experience-logo">
+                    <div class="experience-text-container">
+                        <h3>University</h3>
+                        <p class="experience-date">January 2024 - April- 2025</p>
+                        <p>Fake News Detection System (Machine Learning Project) (2024-2025)
+                            Developed a Fake News Detection model using Python & Machine Learning.
+
+                            Utilized NLP techniques (TF-IDF, Word Embeddings, etc.) for text processing.
+
+                            Trained classifiers like Logistic Regression, SVM, and Random Forest for accurate
+                            predictions.
+
+                            Created a user-friendly dashboard to classify news as real or fake.
+
+                            Analyzed dataset insights to assess the impact & severity of fake news</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <img src="images/login form.PNG" alt="Intern intelligence" class="experience-logo">
+                    <div class="experience-text-container">
+                        <h3>Intern intelligence</h3>
+                        <p class="experience-date">Freelancer</p>
+                        <p>Web Developer – Authentication System (2025)
+                            Developed a responsive Login/Signup system using HTML, CSS, JavaScript, and Firebase.
+
+                            Implemented secure authentication with Firebase (email/password & Google login).
+
+                            Designed a modern and user-friendly UI with a fully responsive layout.
+
+                            Integrated "Remember Me" feature for persistent user sessions.
+
+                            Ensured real-time authentication updates and secure data handling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <div class="section-subtitle">Showcasing my best work and skills</div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item">
+                    <a href="#">
+                        <div class="portfolio-image">
+                            <img src="images/Qr code.png" alt="Project 1" loading="lazy">
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>QR-Based Management System</h3>
+                            <p>
+                                🔹 **Tech Stack:** React.js, Node.js, MongoDB, Tailwind CSS, Firebase, JWT <br>
+                                ✅ **QR Code Scanning & Management** <br>
+                                ✅ **Geolocation Tracking** (Google Maps API) <br>
+                                ✅ **Secure Authentication & Dashboard**
+                            </p>
+                            <div class="tags">
+                                <span>React</span> <span>Node.js</span> <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item">
+                    <a href="#">
+                        <div class="portfolio-image">
+                            <img src="images\login form.PNG" alt="Project 2" loading="lazy">
+                        </div>
+                        <div class="portfolio-item-content">
+                            <h3>Authentication System</h3>
+                            <p>
+                                🔹 **Tech Stack:** HTML, CSS, JavaScript, Firebase <br>
+                                ✅ **Secure Login/Signup with Firebase** <br>
+                                ✅ **Google Authentication** <br>
+                                ✅ **Fully Responsive UI**
+                            </p>
+                            <div class="tags">
+                                <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Skills" class="scroll-reveal">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Firebase</li>
+                <li>UI/UX Design (Figma, Adobe XD)</li>
+                <li>Graphic Design (Photoshop, Illustrator)</li>
+            </ul>
+        </section>
+
+
+        <section id="contact">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <div class="section-subtitle">Get in touch to discuss potential collaborations or projects</div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Have a question? Want to Collaborate? Just want to chat?
+                        Reach out to me on
+                    </p>
+                    <div class="social-links">
+                        <a href="www.linkedin.com/in/neha-areeja-15bbbb27a" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/NehaRaiDeveloper" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Dev.to"><i class="fab fa-dev"></i></a>
+                        <a href="#" aria-label="Upwork"><i class="fab fa-upwork"></i></a>
+                        <a href="#" aria-label="Medium"><i class="fab fa-medium"></i></a>
+                        <a href="nehaareeja@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="sm">Send me a message</p>
+                </div>
+
+                <form id="contactForm">
+                    <div class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-area">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-area">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="full form-area">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Subject">
+                            </div>
+
+                            <div class="full form-area">
+                                <label for="message">Message:</label>
+                                <textarea id="message" placeholder="Your Message" required></textarea>
+                            </div>
+
+                            <div class="full form-area button-area">
+                                <button type="submit" class="button">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Neha Rai. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
